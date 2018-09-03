@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>SetTimeout</title>
+</head>
+<body>
+	<p class="hoge">JavaScript</p>
+	<p class="hogehoge">PHP</p>
+	<p class="hoge">Java</p>
+
+	<input type="button" value="MoveBottom" onclick="MoveBottom()">
+	<input type="button" value="Stop" onclick="Stop()">
+	<script>
+		var e = document.getElementsByClassName("hoge");
+		e[0].style.position = 'relative';
+		e[0].style.top = '0px';
+
+		var st;
+		function MoveBottom()
+		{
+			e[0].style.top = parseInt(e[0].style.top) + 1 + 'px';
+			st = setTimeout(MoveBottom,20);
+		}
+		function Stop(){
+			clearTimeout(st);
+		}
+	</script>
+</body>
+</html>

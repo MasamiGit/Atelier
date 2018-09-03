@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>SetInterval</title>
+</head>
+<body>
+	<p class="hoge">JavaScript</p>
+	<p class="hogehoge">PHP</p>
+	<p class="hoge">Java</p>
+
+	<input type="button" value="MoveRight" onclick="SetAnime()">
+	<input type="button" value="Stop" onclick="Stop()">
+	<script>
+		var e = document.getElementsByClassName("hoge");
+		e[0].style.position = 'relative';
+		e[0].style.left = '0px';
+
+		var st;
+
+		function SetAnime()
+		{
+			st = setInterval(MoveRight,20);
+		}
+		function MoveRight()
+		{
+			e[0].style.left = parseInt(e[0].style.left) + 10 + 'px';
+		}
+		function Stop()
+		{
+			clearInterval(st);
+		}
+	</script>
+</body>
+</html>

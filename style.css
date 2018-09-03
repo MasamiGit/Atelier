@@ -1,0 +1,77 @@
+/*
+Template:twentyfifteen
+Theme Name:twentyfifteen-child
+Template:twentyfifteen
+*/
+body{
+    font-family: 'Hiragino Kaku Gothic ProN','メイリオ', sans-serif;
+    line-height: 2;
+}
+/* body:before {
+    background: url(http://masami.main.jp/wp-content/uploads/2018/09/sidebar_bg.jpg)!important;
+    background-repeat:repeat!important;
+     background-position:none;
+    -webkit-background-size: 0;
+    -moz-background-size: 0;
+    -o-background-size: 0;
+    background-size:0;
+} */
+.site-header {
+    background: url(http://masami.main.jp/wp-content/uploads/2018/09/sidebar_bg.jpg)!important;
+    background-repeat:repeat;
+    background-position: none;
+    -webkit-background-size:0;
+    -moz-background-size:0;
+    -o-background-size:0;
+    background-size:0;
+} 
+h1.entry-title {
+    font-size: 1.4em;
+}
+h3.fs_1_2rem{
+    font-size: 1.2em;
+    border-left: 5px solid red;
+    padding-left: 10px;
+    line-height: 0.9!important;
+    vertical-align: sub!important;
+}
+.sgul {
+    margin-bottom: 0!important;
+}
+.sgul li{
+	list-style-type:none!important;
+	font-size: 1.3rem!important;
+}
+.site-title a {
+    margin-top: 10px;
+    color: #85a0b7;
+    display: block;
+	font-size:30px;
+}
+.sg_h3_f {
+    font-size: 20px!important;
+    background: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+	font-weight:bold;
+	color:#2f2f9c;
+	margin-bottom:0;
+	margin-top:20px;
+}
+section.post_sec {
+    margin-top: 20px;
+}
+article.m_auto {
+    width: 100%;
+    text-align: center;
+	/*perspective:1000px;*/
+}
+article.m_auto img {
+    transform: translate3D(10px, -10px, -5px);
+}
+p.line_red {
+    border-left: 5px solid red;
+    padding-left: 15px;
+    line-height: 1.5;
+	margin-bottom: 0;
+}

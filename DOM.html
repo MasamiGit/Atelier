@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM</title>
+	<style>
+		body{
+			width:100%;
+			margin: 0 auto;
+		}
+		th {
+			background: antiquewhite;
+			padding: 0 20px;
+		}
+		td {
+			padding-left: 20px;
+			border-bottom: dotted 1px #aaa;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		document.write("<table>");
+		for(p in window)
+		{
+			var dom = p;
+			var value = window[p];
+			document.write("<tr><th>" + dom + "</th><td>" + value + "</td>" + "<tr>");
+		}
+		document.write("</table>");
+	</script>
+</body>
+</html>

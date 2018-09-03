@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM_document</title>
+	<style>
+		body{
+			width:100%;
+			margin: 0 auto;
+		}
+		h3{
+			text-align: center;
+			margin: 20px;
+		}
+		table.menba {
+   			 width: 100%;
+		}
+		th {
+			background: antiquewhite;
+			padding: 0 20px;
+			width:35%;
+		}
+		td {
+			padding-left: 20px;
+			border-bottom: dotted 1px #aaa;
+			width:65%;
+		}
+	</style>
+</head>
+<body>
+	<h3>オブジェクトdocumentのメンバ</h3>
+	<script>
+		document.write("<table class='menba'>");
+		for(p in document)
+		{
+			var dom = p;
+			var value = document[p];
+			document.write("<tr><th>" + dom + "</th><td>" + value + "</td>" + "<tr>");
+		}
+		document.write("</table>");
+	</script>
+</body>
+</html>
