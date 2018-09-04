@@ -7,15 +7,6 @@ body{
     font-family: 'Hiragino Kaku Gothic ProN','メイリオ', sans-serif;
     line-height: 2;
 }
-/* body:before {
-    background: url(http://masami.main.jp/wp-content/uploads/2018/09/sidebar_bg.jpg)!important;
-    background-repeat:repeat!important;
-     background-position:none;
-    -webkit-background-size: 0;
-    -moz-background-size: 0;
-    -o-background-size: 0;
-    background-size:0;
-} */
 .site-content {
     background: url(http://masami.main.jp/wp-content/uploads/2018/09/sidebar_bg.jpg)!important;
     background-repeat:repeat;
