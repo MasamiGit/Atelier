@@ -15,12 +15,17 @@ body{
     -moz-background-size:0;
     -o-background-size:0;
     background-size:0;
-} 
-section#se_style h3{
-    font-size: 1em;
 }
-section#se_style P{
+.entry-title {
+    font-size: 22px;
+}
+section#se_style h3 {
     font-size: 18px;
+    line-height: 1.5;
+}
+section#se_style P {
+    font-size: 14px;
+    margin-bottom: 0px;
 }
 section#se_style dt,dd {
     font-size: 15px;
